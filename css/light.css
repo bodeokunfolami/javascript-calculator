@@ -1,0 +1,9 @@
+:root {
+    --primary-color: turquoise;
+    --secondary-color: #f4f4f4;
+    --border-raduis: 5px;
+}
+
+body {
+    background: var(--primary-color);
+}

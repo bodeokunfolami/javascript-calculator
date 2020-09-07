@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: gray;
+    --border-raduis: 5px;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+#id_screen {
+    color: #ffffff;
+}
+
+input[type=button] {
+    background: var(--secondary-color);
+    color: #ffffff;
+}
+
+button {
+    background: dimgray;
+    color: #ffffff;
+}
