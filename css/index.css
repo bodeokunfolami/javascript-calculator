@@ -67,6 +67,7 @@ body {
 .grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .grid div {
@@ -101,6 +102,10 @@ button {
     padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#eqaul-to {
+    background: #dc3545 !important;
 }
 
 @media only screen and (max-width: 576px) {
