@@ -7,10 +7,10 @@ const theme = document.querySelector('#theme');
 const onButtonClick = (e) => {
     if (e.target.value === "=") {
         evaluate();
-        return
+        return;
     } else if (e.target.value === "C") {
         clear();
-        return
+        return;
     }
     const number = e.target.value;
     screen.value += number;
@@ -40,3 +40,12 @@ themeBtn.addEventListener('click', (e) => {
         e.target.innerHTML = "Light Mode ☀️";
     }
 });
+
+screen.addEventListener('keydown', (e) => {
+    let input = e.key;
+    let regex = /\d+/g;
+    let operatorRegex = /[+, \-, /, *, .]/g;
+    if (!regex.test(input) && !operatorRegex.test(input) && input !== "Backspace") {
+        e.preventDefault();
+    }
+})
