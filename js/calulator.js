@@ -21,8 +21,10 @@ const clear = () => {
 }
 
 const evaluate = (e) => {
-    const result = eval(screen.value);
-    screen.value = result;
+    if (screen.value !== "") {
+        const result = eval(screen.value);
+        screen.value = result;
+    }
 }
 
 
